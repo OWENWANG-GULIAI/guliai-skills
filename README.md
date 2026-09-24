@@ -2,7 +2,7 @@
   <img src="skills/guliai-daily-signature/assets/guliai-logo-on-light.png" width="240" alt="GULIAI">
 </p>
 
-# GULIAI Skills
+<h1 align="center">GULIAI Skills</h1>
 
 <p align="center">
   <a href="VERSION"><img src="https://img.shields.io/badge/Version-0.1.0-9f6b13" alt="version 0.1.0"></a>
