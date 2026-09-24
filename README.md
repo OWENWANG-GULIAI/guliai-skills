@@ -1,16 +1,21 @@
-# GULIAI Skills
-
 <p align="center">
   <img src="skills/guliai-daily-signature/assets/guliai-logo-on-light.png" width="240" alt="GULIAI">
 </p>
 
+# GULIAI Skills
+
 <p align="center">
+  <a href="VERSION"><img src="https://img.shields.io/badge/Version-0.1.0-9f6b13" alt="version 0.1.0"></a>
+  <a href="#技能目录"><img src="https://img.shields.io/badge/Docs-中文-2f7a65" alt="Chinese documentation"></a>
+  <a href="LICENSES.md"><img src="https://img.shields.io/badge/License-per--package-6e7781" alt="per package license"></a>
   <a href="#技能目录"><img src="https://img.shields.io/badge/Packages-11-9f6b13" alt="11 packages"></a>
   <a href="#技能目录"><img src="https://img.shields.io/badge/Skills-14-2f7a65" alt="14 skills"></a>
-  <a href="LICENSES.md"><img src="https://img.shields.io/badge/License-per--package-6e7781" alt="per package license"></a>
 </p>
 
 GULIAI Skills 是谷粒 AI（GULIAI）维护的实用型 Codex Skill 合集。它把内容生产、个人品牌、课程设计、社群运营与 Skill 开发等能力放在一个可检索、可安装、可持续维护的目录中。
+
+> **定位**：面向实际业务与内容生产的独立 Skill 集合与分发入口。<br>
+> **不做什么**：不把 11 个独立能力伪装成一个根 Skill，也不以总仓库名义重新授权各包内容。
 
 这里的每个目录都是独立 Skill 包：保留自己的 `SKILL.md`、说明、脚本、测试和许可文件；总仓库只负责集中发现与分发。
 
@@ -50,6 +55,7 @@ cp -R guliai-skills/skills/guliai-daily-signature "${CODEX_HOME:-$HOME/.codex}/s
 - 同步前检查隐私、凭据、本机绝对路径和运行时状态；不把个人素材、私有知识库或本机状态提交到公开仓库。
 - 总仓库不删除、不归档现有独立仓库，避免破坏已有链接。迁移或归档需单独确认。
 - 聚合仓库是统一发现与分发入口；每次更新都需保留来源映射，并完成包级校验。
+- 当前采用“上游仓库更新后同步到合集”的单向维护方式；不会自动双向同步。若未来要把合集改为唯一维护源，需要单独迁移与公告。
 
 ## 许可与使用边界
 
