@@ -1,0 +1,78 @@
+version: "1.0"
+
+model_weights:
+  keyword: 30
+  topic: 30
+  relationship: 20
+  behavior: 20
+
+selection:
+  fallback_threshold: 60
+  secondary_scene_max_gap: 10
+  name_is_supporting_evidence_only: true
+  require_chat_body_evidence: true
+
+scenes:
+  course:
+    label: "课程学习群"
+    template: "templates/course_report.md"
+    keywords: ["课程", "学习", "作业", "打卡", "老师", "学员", "收获", "不会", "复盘"]
+    topic_signals: ["学习效果", "教学反馈", "课程优化", "作业完成"]
+    relationship_signals: ["老师-学员", "助教-学员"]
+    behavior_signals: ["布置作业", "点评", "答疑", "打卡"]
+
+  technology:
+    label: "技术交流群"
+    template: "templates/technology_report.md"
+    keywords: ["工具", "模型", "技术", "报错", "测试", "方法", "API", "版本", "解决方案"]
+    topic_signals: ["原理", "故障排查", "最佳实践", "技术趋势"]
+    relationship_signals: ["提问者-解答者", "专家-学习者"]
+    behavior_signals: ["提问", "复现", "测试", "验证方案"]
+
+  project:
+    label: "项目协作群"
+    template: "templates/project_report.md"
+    keywords: ["项目", "进度", "负责人", "截止时间", "交付", "风险", "验收", "会议"]
+    topic_signals: ["任务", "里程碑", "资源", "风险", "变更"]
+    relationship_signals: ["项目经理-执行者", "客户-交付方"]
+    behavior_signals: ["分配任务", "汇报进度", "确认决策", "升级问题"]
+
+  sales:
+    label: "销售成交群"
+    template: "templates/sales_report.md"
+    keywords: ["客户", "线索", "报价", "预算", "合同", "成交", "跟进", "回款", "采购"]
+    topic_signals: ["需求确认", "方案沟通", "报价谈判", "采购流程"]
+    relationship_signals: ["销售-客户", "需求方-决策者", "渠道-合作方"]
+    behavior_signals: ["询价", "发方案", "谈判", "确认下一步"]
+
+  customer:
+    label: "客户服务群"
+    template: "templates/customer_report.md"
+    keywords: ["使用问题", "反馈", "售后", "满意", "投诉", "需求变更", "响应", "续约"]
+    topic_signals: ["交付状态", "客户需求", "服务质量", "续约风险"]
+    relationship_signals: ["服务方-客户", "交付方-使用者"]
+    behavior_signals: ["报障", "响应", "交付确认", "提出变更"]
+
+  industry:
+    label: "行业交流与专业社群"
+    template: "templates/industry_report.md"
+    keywords: ["行业", "趋势", "政策", "案例", "数据", "专家", "渠道", "资源", "合作"]
+    topic_signals: ["行业热点", "专业观点", "市场变化", "资源机会"]
+    relationship_signals: ["专家-同行", "资源方-连接者"]
+    behavior_signals: ["分享观点", "发布数据", "资源对接", "争议讨论"]
+
+  community:
+    label: "社群运营群"
+    template: "templates/community_report.md"
+    keywords: ["活动", "互动", "分享", "福利", "用户", "会员", "转发", "报名", "社群"]
+    topic_signals: ["活跃度", "用户画像", "活动效果", "转化路径"]
+    relationship_signals: ["群主-成员", "运营者-用户", "意见领袖-成员"]
+    behavior_signals: ["发起活动", "互动任务", "报名", "分享传播"]
+
+  general:
+    label: "综合关系群"
+    template: "templates/general_report.md"
+    keywords: []
+    topic_signals: ["多用途", "普通交流", "场景证据不足"]
+    relationship_signals: ["成员互动"]
+    behavior_signals: ["日常交流"]

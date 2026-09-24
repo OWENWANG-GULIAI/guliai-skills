@@ -1,0 +1,4 @@
+interface:
+  display_name: "微信群智能情报分析助手"
+  short_description: "从微信群聊中提取证据、关键人物、业务机会、行动建议与可沉淀资产"
+  default_prompt: "使用 $wechat-group-intelligence 分析我提供的微信群聊天记录，区分事实、推断与建议。"

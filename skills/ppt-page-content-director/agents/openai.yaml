@@ -1,0 +1,4 @@
+interface:
+  display_name: "PPT 逐页内容编导"
+  short_description: "把内容编排成可交给视觉设计的逐页内容包"
+  default_prompt: "Use $ppt-page-content-director to turn the supplied material into a coherent PPT page-content package, preserving facts and leaving visual layout and image generation to the downstream visual-design skill."

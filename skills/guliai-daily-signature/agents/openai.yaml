@@ -1,0 +1,8 @@
+interface:
+  display_name: "GULIAI 日签海报"
+  short_description: "从个人真实理念生成品牌日签海报和可复制朋友圈文案"
+  brand_color: "#D39A18"
+  default_prompt: "使用 $guliai-daily-signature 生成今天的日签海报和可直接复制的朋友圈文案。"
+
+policy:
+  allow_implicit_invocation: true

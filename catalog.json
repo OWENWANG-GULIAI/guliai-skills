@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "collection": "GULIAI Skills",
+  "version": "0.1.0",
+  "packages": [
+    {"id": "chat-to-tutorial", "path": "skills/chat-to-tutorial", "source_repository": "https://github.com/OWENWANG-GULIAI/chat-to-tutorial", "license": "MIT"},
+    {"id": "content-to-flowchart-skill", "path": "skills/content-to-flowchart-skill", "source_repository": "https://github.com/OWENWANG-GULIAI/content-to-flowchart-skill", "license": "UNLICENSED"},
+    {"id": "enterprise-training-outline-designer", "path": "skills/enterprise-training-outline-designer", "source_repository": "https://github.com/OWENWANG-GULIAI/enterprise-training-outline-designer", "version": "1.0.0", "license": "MIT"},
+    {"id": "guliai-daily-signature", "path": "skills/guliai-daily-signature", "source_repository": "https://github.com/OWENWANG-GULIAI/guliai-daily-signature", "version": "1.1.0", "license": "MIT"},
+    {"id": "guyanyan-wechat-automation", "path": "skills/guyanyan-wechat-automation", "source_repository": "https://github.com/OWENWANG-GULIAI/guyanyan-wechat-automation", "license": "MIT", "nested_skills": ["guliai-visual-design", "guyanyan-wechat-writer", "guyanyan-wechat-pipeline"]},
+    {"id": "ppt-page-content-director", "path": "skills/ppt-page-content-director", "source_repository": "https://github.com/OWENWANG-GULIAI/ppt-page-content-director", "version": "2.0.0", "license": "MIT"},
+    {"id": "publishing-skills-to-github", "path": "skills/publishing-skills-to-github", "source_repository": "https://github.com/OWENWANG-GULIAI/publishing-skills-to-github", "license": "MIT"},
+    {"id": "skill-assetdistiller", "path": "skills/skill-assetdistiller", "source_repository": "https://github.com/OWENWANG-GULIAI/skill-assetdistiller", "license": "MIT"},
+    {"id": "skill-prd-designer", "path": "skills/skill-prd-designer", "source_repository": "https://github.com/OWENWANG-GULIAI/skill-prd-designer", "license": "MIT"},
+    {"id": "student-feedback-poster", "path": "skills/student-feedback-poster", "source_repository": "https://github.com/OWENWANG-GULIAI/student-feedback-poster", "license": "MIT"},
+    {"id": "wechat-group-intelligence", "path": "skills/wechat-group-intelligence", "source_repository": "https://github.com/OWENWANG-GULIAI/wechat-group-intelligence", "license": "MIT"}
+  ]
+}

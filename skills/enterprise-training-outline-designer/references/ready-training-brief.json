@@ -1,0 +1,18 @@
+{
+  "customer_name": "示例客户",
+  "target_learners": "30名一线主管，有基础管理经验。",
+  "business_problem": "协作事项常因目标和责任不清而反复沟通。",
+  "desired_outcomes": "学员能够拆解协作事项，并形成一次关键沟通的行动方案。",
+  "duration": "1天，09:00-12:00、13:30-16:30",
+  "delivery_mode": "线下",
+  "practice_design": "统一案例后迁移到真实协作场景。",
+  "available_materials": ["典型协作案例"],
+  "constraints": "不涉及真实客户敏感信息。",
+  "confirmed_facts": ["客户要求为主管开展一天培训"],
+  "assumptions": [],
+  "open_questions": [],
+  "brief_confirmed": true,
+  "output_format": "markdown",
+  "branding_confirmed": true,
+  "template_confirmed": true
+}

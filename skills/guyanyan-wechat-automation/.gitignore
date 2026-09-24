@@ -1,0 +1,10 @@
+.DS_Store
+**/.DS_Store
+**/.env
+**/__pycache__/
+**/state/
+**/.wechat-draft-state.json
+**/local-config.*
+**/assets/local/
+generated-articles/
+post-to-wechat/

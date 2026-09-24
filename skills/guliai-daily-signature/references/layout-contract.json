@@ -1,0 +1,35 @@
+{
+  "canvas": {
+    "width": 1024,
+    "height": 1536
+  },
+  "bottom_natural_band": {
+    "y": 1220,
+    "height": 316,
+    "rule": "Use continuous natural paper or subtle watercolor texture only; never create a rectangular blank panel or color-block placeholder."
+  },
+  "clear_footprints": {
+    "qr": {
+      "x": 0,
+      "y": 1230,
+      "width": 280,
+      "height": 306
+    },
+    "logo": {
+      "x": 620,
+      "y": 1315,
+      "width": 404,
+      "height": 221
+    }
+  },
+  "base_forbidden": [
+    "person",
+    "hands",
+    "clothing",
+    "furniture",
+    "objects",
+    "text",
+    "placeholder_blocks",
+    "qr_or_logo_artwork"
+  ]
+}

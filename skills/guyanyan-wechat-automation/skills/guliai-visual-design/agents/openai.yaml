@@ -1,0 +1,9 @@
+interface:
+  display_name: "GULIAI 视觉设计"
+  short_description: "GULIAI 品牌知识卡与公众号封面生成搭档"
+  icon_small: "../../../assets/guliai-logo-dark.png"
+  icon_large: "../../../assets/guliai-logo-dark.png"
+  brand_color: "#2F7D7A"
+  default_prompt: "使用 $guliai-visual-design 把文章要点转成一张有信息密度的品牌知识卡或公众号封面。"
+policy:
+  allow_implicit_invocation: true

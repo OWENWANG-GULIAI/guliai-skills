@@ -1,0 +1,29 @@
+version: "1.0"
+
+principle: "关键词只用于召回候选信息；必须结合说话人、上下文、否定词、引用关系和后续回应确认含义。"
+
+categories:
+  commercial:
+    priority: 5
+    terms: ["预算", "采购", "合作", "需求", "项目", "报价", "方案", "合同", "付款", "回款"]
+  decision:
+    priority: 5
+    terms: ["确定", "决定", "同意", "安排", "推进", "否决", "取消", "改期"]
+  feedback:
+    priority: 4
+    terms: ["收获", "帮助", "建议", "问题", "满意", "投诉", "困难", "不会"]
+  technical_knowledge:
+    priority: 4
+    terms: ["原理", "方法", "框架", "最佳实践", "复现", "测试", "验证", "报错"]
+  project_risk:
+    priority: 5
+    terms: ["延期", "阻塞", "风险", "缺人", "返工", "未完成", "待确认"]
+  action:
+    priority: 5
+    terms: ["我来负责", "请完成", "截止", "周五前", "下一步", "跟进", "交付"]
+
+context_rules:
+  preserve_short_replies: ["同意", "就按这个做", "价格可以", "下周安排", "我来负责", "有预算"]
+  negation_terms: ["不", "没有", "暂不", "拒绝", "取消", "无需"]
+  unverified_terms: ["可能", "听说", "据说", "大概", "预计", "应该"]
+  verified_terms: ["已确认", "已测试", "已签署", "已付款", "已交付"]

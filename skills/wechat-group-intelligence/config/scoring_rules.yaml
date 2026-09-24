@@ -1,0 +1,40 @@
+version: "1.0"
+
+information_value:
+  weights:
+    relevance: 30
+    importance: 25
+    business_value: 25
+    action_value: 20
+  bands:
+    - { min: 90, max: 100, stars: 5, handling: "进入核心摘要和行动建议" }
+    - { min: 75, max: 89, stars: 4, handling: "进入专项分析" }
+    - { min: 60, max: 74, stars: 3, handling: "作为辅助证据" }
+    - { min: 40, max: 59, stars: 2, handling: "按需保留" }
+    - { min: 0, max: 39, stars: 1, handling: "通常为噪音或弱相关" }
+  core_intelligence_minimum_supported_criteria: 2
+  core_intelligence_criteria:
+    - "与用户高度相关"
+    - "对结果有明显影响"
+    - "存在明确行动"
+    - "有商业或产品价值"
+    - "有可靠原文证据"
+
+person_value:
+  weights:
+    decision_influence: 25
+    business_value: 25
+    professional_contribution: 20
+    relationship_value: 15
+    action_participation: 15
+  rule: "关键人物不等于发言最多的人；没有角色证据时使用可能角色并标注可信度。"
+
+scene_adjustments:
+  course: ["不会操作提高产品优化权重", "明确进阶需求提高用户相关性"]
+  technology: ["已复现或已验证提高重要性", "未经测试的解决方案降低证据等级"]
+  project: ["延期和阻塞提高重要性与行动价值", "明确负责人和截止时间提高行动价值"]
+  sales: ["预算、采购、合同提高商业价值", "明确拒绝降低跟进优先级并触发边界提醒"]
+  customer: ["投诉和续约风险提高重要性与行动价值"]
+  industry: ["有来源的数据和可验证观点提高重要性"]
+  community: ["重复需求和参与趋势提高重要性"]
+  general: ["无业务证据时商业价值不得因关键词孤立出现而上调"]

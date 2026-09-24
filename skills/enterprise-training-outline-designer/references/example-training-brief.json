@@ -1,0 +1,21 @@
+{
+  "customer_name": "示例客户",
+  "industry_and_context": "服务业，正推动一线主管提升跨部门协作效率。",
+  "target_learners": "30名一线主管，有基础管理经验。",
+  "learner_baseline": "对结构化沟通方法了解有限。",
+  "stated_topics": ["跨部门协作", "高效沟通"],
+  "business_problem": "协作事项常因目标和责任不清而反复沟通。",
+  "desired_outcomes": "学员能够拆解协作事项，并形成一次关键沟通的行动方案。",
+  "duration": "1天，09:00-12:00、13:30-16:30",
+  "delivery_mode": "线下，待最终确认",
+  "practice_design": "统一案例教学后，迁移到各自真实协作场景。",
+  "available_materials": ["典型协作案例", "现有沟通模板"],
+  "constraints": "不涉及真实客户敏感信息。",
+  "confirmed_facts": ["客户要求为主管开展一天培训", "客户希望加入实操"],
+  "assumptions": ["线下形式更利于真实场景迁移"],
+  "open_questions": ["是否需要课后行动计划跟进"],
+  "brief_confirmed": false,
+  "output_format": "",
+  "branding_confirmed": false,
+  "template_confirmed": false
+}
