@@ -15,8 +15,8 @@ description: Use when a user asks for a GULIAI daily-signature poster, today/tom
 2. 用 `scripts/daily_signature_ops.py resolve-date` 解析今天、明天、昨天或明确日期；以配置时区为准，不采信用户手写星期。
 3. 用户已给主题或金句时忠实使用；否则读取 [选题来源](references/content-sourcing.md)，从当前上下文、获授权的历史对话或私有理念库中选择一条可追溯、近 30 天未重复的观点。
 4. 读取 [文案规范](references/copy-guide.md)，形成主标题、星期标签、2–3 行正文、英文点缀和 80–130 字朋友圈正文。朋友圈临时文件只写可发布正文。
-5. 读取 [视觉系统](references/visual-system.md) 与 [底部安全区合同](references/layout-contract.json)。从配置中的人物资产池按主题选择一张人物参考与一种构图路线；日期卡、二维码和 Logo 保持稳定安全区，人物、标题、正文、英文点缀及人物标签必须围绕人物姿态动态排版。用 imagegen 一次生成包含人物、日期卡和全部指定文字的完整创意底图；底部二维码与 Logo 区必须是连续自然背景，不得出现占位色块，也不得有任何人物、手、衣物、道具或文字侵入真实资产覆盖区。
-6. 用 `view_image` 逐字检查底图。日期、文字、人物、双图钉、人物标签、服装与袖子结构、信息层级、构图可读性或底部安全区任一失败，只针对失败项重生完整底图；最多两次自动返工。
+5. 读取 [视觉系统](references/visual-system.md) 与 [资产叠加合同](references/layout-contract.json)。从配置中的人物资产池按主题选择一张人物参考与一种构图路线；日期卡、二维码和 Logo 保持固定坐标，人物、标题、正文、英文点缀及人物标签必须围绕人物姿态动态排版。用 imagegen 一次生成包含人物、日期卡和全部指定文字的完整创意底图；允许人物、纹理、道具和结构延伸至底部，禁止为了二维码或 Logo 制造整块空白、白框或占位色块。二维码与 Logo 不由生图模型绘制，最终直接叠加真实资产；避免把主标题、正文或人物脸部安排在它们的实际覆盖范围内。
+6. 用 `view_image` 逐字检查底图。日期、文字、人物、双图钉、人物标签、服装与袖子结构、信息层级、构图可读性或资产叠加后会遮挡关键信息任一失败，只针对失败项重生完整底图；最多两次自动返工。
 7. 底图通过后，用 `daily_signature_ops.py compose` 叠加真实二维码和官方 Logo。此确定性后置合成是二维码可用性与 Logo 保真的必要步骤。
 8. 读取 [验收清单](references/qa-checklist.md)，目视检查最终图，再运行 `daily_signature_ops.py validate`。只有两项都通过，才运行 `publish` 同时替换输出目录中的固定文件。
 9. 更新私有 `state/usage-log.json` 的来源摘要、主题与日期。仅记录公开安全的忠实摘要，不复制敏感聊天内容。

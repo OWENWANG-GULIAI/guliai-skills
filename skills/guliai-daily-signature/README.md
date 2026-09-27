@@ -7,7 +7,7 @@
 <p align="center">从真实理念出发，生成可直接发布的个人品牌日签海报与朋友圈文案。</p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-1.1.0-D39A18">
+  <img alt="Version" src="https://img.shields.io/badge/version-1.2.0-D39A18">
   <img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-3776AB">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-2EA44F">
 </p>
@@ -53,7 +53,7 @@ flowchart LR
 | 日签文案 | 主标题、正文、英文点缀、星期标签形成单一清晰观点 |
 | 视觉生成 | 1024×1536、动态构图路线、人物约占画面 1/3；支持人物单侧、结构叙事、分栏杂志与水彩转场 |
 | 品牌资产保护 | 二维码和 Logo 不交给模型重绘，最后再精确合成 |
-| 底部安全带 | 二维码与 Logo 的覆盖范围保持连续自然背景；无人物遮挡、无色块占位框 |
+| 真实资产叠加 | 二维码与 Logo 在完整画面上直接后置合成；不设置底部留白或色块占位框 |
 | 朋友圈文案 | 80–130 个可见字符，2–5 个自然段，只保留可发布正文 |
 | 安全发布 | 校验通过后成对替换文件；中途失败自动恢复旧版本 |
 
@@ -155,7 +155,7 @@ python3 -m unittest discover -s tests -v
 python3 scripts/daily_signature_ops.py resolve-date --when tomorrow --today 2026-09-15
 ```
 
-测试覆盖日期解析、朋友圈文案合同、坐标缩放、Logo 默认坐标不越界、二维码像素保真、发布失败回滚、底部安全区合同和公开包边界。
+测试覆盖日期解析、朋友圈文案合同、坐标缩放、Logo 默认坐标不越界、二维码像素保真、发布失败回滚、真实资产叠加合同和公开包边界。
 
 ## 隐私与安全
 

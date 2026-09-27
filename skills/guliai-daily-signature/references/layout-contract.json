@@ -3,32 +3,24 @@
     "width": 1024,
     "height": 1536
   },
-  "bottom_natural_band": {
-    "y": 1220,
-    "height": 316,
-    "rule": "Use continuous natural paper or subtle watercolor texture only; never create a rectangular blank panel or color-block placeholder."
-  },
-  "clear_footprints": {
+  "asset_overlays": {
     "qr": {
-      "x": 0,
-      "y": 1230,
-      "width": 280,
-      "height": 306
+      "x": 28,
+      "y": 1260,
+      "width": 224,
+      "height": 224,
+      "rule": "Composite the authentic QR directly over the generated design. Do not reserve a blank panel; keep only headline, body copy, face, and essential label details outside this exact coverage area."
     },
     "logo": {
-      "x": 620,
-      "y": 1315,
-      "width": 404,
-      "height": 221
+      "x": 650,
+      "y": 1323,
+      "width": 320,
+      "height": 213,
+      "rule": "Composite the official logo directly over the generated design. Do not reserve a blank panel; keep only headline, body copy, face, and essential label details outside this exact coverage area."
     }
   },
+  "base_rule": "The design may continue naturally through the lower area with people, texture, objects, and structural elements. Never create a blank bottom band, white rectangle, card, or color-block placeholder for the post-composited assets.",
   "base_forbidden": [
-    "person",
-    "hands",
-    "clothing",
-    "furniture",
-    "objects",
-    "text",
     "placeholder_blocks",
     "qr_or_logo_artwork"
   ]

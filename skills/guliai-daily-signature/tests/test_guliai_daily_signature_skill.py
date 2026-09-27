@@ -183,33 +183,37 @@ class PublicationTests(unittest.TestCase):
 
 
 class SkillContractTests(unittest.TestCase):
-    def test_layout_contract_reserves_clear_footprints_for_real_assets(self):
+    def test_layout_contract_allows_direct_real_asset_overlays(self):
         contract_path = SKILL_DIR / "references" / "layout-contract.json"
         self.assertTrue(contract_path.is_file())
 
         contract = json.loads(contract_path.read_text(encoding="utf-8"))
         self.assertEqual(contract["canvas"], {"width": 1024, "height": 1536})
         self.assertEqual(
-            contract["clear_footprints"]["qr"],
-            {"x": 0, "y": 1230, "width": 280, "height": 306},
+            contract["asset_overlays"]["qr"],
+            {
+                "x": 28,
+                "y": 1260,
+                "width": 224,
+                "height": 224,
+                "rule": "Composite the authentic QR directly over the generated design. Do not reserve a blank panel; keep only headline, body copy, face, and essential label details outside this exact coverage area.",
+            },
         )
         self.assertEqual(
-            contract["clear_footprints"]["logo"],
-            {"x": 620, "y": 1315, "width": 404, "height": 221},
+            contract["asset_overlays"]["logo"],
+            {
+                "x": 650,
+                "y": 1323,
+                "width": 320,
+                "height": 213,
+                "rule": "Composite the official logo directly over the generated design. Do not reserve a blank panel; keep only headline, body copy, face, and essential label details outside this exact coverage area.",
+            },
         )
         self.assertEqual(
             set(contract["base_forbidden"]),
-            {
-                "person",
-                "hands",
-                "clothing",
-                "furniture",
-                "objects",
-                "text",
-                "placeholder_blocks",
-                "qr_or_logo_artwork",
-            },
+            {"placeholder_blocks", "qr_or_logo_artwork"},
         )
+        self.assertIn("Never create a blank bottom band", contract["base_rule"])
 
     def test_skill_has_discoverable_entrypoint_and_required_resources(self):
         required = [
