@@ -7,7 +7,7 @@
 <p align="center">从真实理念出发，生成可直接发布的个人品牌日签海报与朋友圈文案。</p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-1.2.0-D39A18">
+  <img alt="Version" src="https://img.shields.io/badge/version-1.2.1-D39A18">
   <img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-3776AB">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-2EA44F">
 </p>
@@ -117,6 +117,10 @@ python3 scripts/daily_signature_ops.py configure \
 ```
 
 配置会写入本机 `state/local-config.json`。`state/` 已被忽略，不应提交到公开仓库。
+
+### 更换二维码
+
+后续更换联系二维码时，只需在本机把 `state/local-config.json` 的 `qr.path` 更新为新图片路径；真实二维码与路径都不进入公开仓库。默认不改变坐标。首次使用新码前，先对临时海报运行 `compose` 与 `validate`，确认二维码像素哈希与源素材一致，再发布正式文件。
 
 ## 使用方法
 
