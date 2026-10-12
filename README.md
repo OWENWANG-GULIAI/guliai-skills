@@ -5,17 +5,17 @@
 <h1 align="center">GULIAI Skills</h1>
 
 <p align="center">
-  <a href="VERSION"><img src="https://img.shields.io/badge/Version-0.1.0-9f6b13" alt="version 0.1.0"></a>
+  <a href="VERSION"><img src="https://img.shields.io/badge/Version-0.1.1-9f6b13" alt="version 0.1.1"></a>
   <a href="#技能目录"><img src="https://img.shields.io/badge/Docs-中文-2f7a65" alt="Chinese documentation"></a>
   <a href="LICENSES.md"><img src="https://img.shields.io/badge/License-per--package-6e7781" alt="per package license"></a>
-  <a href="#技能目录"><img src="https://img.shields.io/badge/Packages-11-9f6b13" alt="11 packages"></a>
-  <a href="#技能目录"><img src="https://img.shields.io/badge/Skills-14-2f7a65" alt="14 skills"></a>
+  <a href="#技能目录"><img src="https://img.shields.io/badge/Packages-12-9f6b13" alt="12 packages"></a>
+  <a href="#技能目录"><img src="https://img.shields.io/badge/Skills-15-2f7a65" alt="15 skills"></a>
 </p>
 
-GULIAI Skills 是谷粒 AI（GULIAI）维护的实用型 Codex Skill 合集。它把内容生产、个人品牌、课程设计、社群运营与 Skill 开发等能力放在一个可检索、可安装、可持续维护的目录中。
+GULIAI Skills 是谷粒 AI（GULIAI）维护的实用型 Codex Skill 合集。它把内容生产、个人品牌、课程设计、社群运营与 Skill 开发等能力放在一个可检索、可安装、可持续维护的目录中，当前包含 12 个独立包和 3 个嵌套 Skill。
 
 > **定位**：面向实际业务与内容生产的独立 Skill 集合与分发入口。<br>
-> **不做什么**：不把 11 个独立能力伪装成一个根 Skill，也不以总仓库名义重新授权各包内容。
+> **不做什么**：不把多个独立能力伪装成一个根 Skill，也不以总仓库名义重新授权各包内容。
 
 这里的每个目录都是独立 Skill 包：保留自己的 `SKILL.md`、说明、脚本、测试和许可文件；总仓库只负责集中发现与分发。
 
@@ -40,6 +40,7 @@ cp -R guliai-skills/skills/guliai-daily-signature "${CODEX_HOME:-$HOME/.codex}/s
 | `enterprise-training-outline-designer` | 企业培训需求访谈与课程大纲设计 | [source](https://github.com/OWENWANG-GULIAI/enterprise-training-outline-designer) |
 | `guliai-daily-signature` | 谷粒 AI个人品牌日签海报与朋友圈文案 | [source](https://github.com/OWENWANG-GULIAI/guliai-daily-signature) |
 | `guyanyan-wechat-automation` | 谷燕燕 / GULIAI 微信内容生产流水线，并含写作与视觉子 Skill | [source](https://github.com/OWENWANG-GULIAI/guyanyan-wechat-automation) |
+| `moments-content-automation` | 判断受众并撰写自然、可直接复制的朋友圈文案 | [package](skills/moments-content-automation) |
 | `ppt-page-content-director` | 课程与演示文稿单页内容策划 | [source](https://github.com/OWENWANG-GULIAI/ppt-page-content-director) |
 | `publishing-skills-to-github` | Skill 的公开发布、审计与 GitHub 同步 | [source](https://github.com/OWENWANG-GULIAI/publishing-skills-to-github) |
 | `skill-assetdistiller` | 将职业经历提炼为可验证、可变现的经验资产 | [source](https://github.com/OWENWANG-GULIAI/skill-assetdistiller) |
@@ -63,4 +64,4 @@ cp -R guliai-skills/skills/guliai-daily-signature "${CODEX_HOME:-$HOME/.codex}/s
 
 ## 版本
 
-集合仓库当前版本：[`0.1.0`](VERSION)。
+集合仓库当前版本：[`0.1.1`](VERSION)。

@@ -1,0 +1,4 @@
+interface:
+  display_name: "朋友圈文案撰写"
+  short_description: "先判断受众，再写自然、有层次且可直接复制的朋友圈文案"
+  default_prompt: "Use $moments-content-automation to draft a natural, audience-aware WeChat Moments post that is ready to copy."
