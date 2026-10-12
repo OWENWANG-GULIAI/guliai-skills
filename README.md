@@ -5,7 +5,7 @@
 <h1 align="center">GULIAI Skills</h1>
 
 <p align="center">
-  <a href="VERSION"><img src="https://img.shields.io/badge/Version-0.1.1-9f6b13" alt="version 0.1.1"></a>
+  <a href="VERSION"><img src="https://img.shields.io/badge/Version-0.1.2-9f6b13" alt="version 0.1.2"></a>
   <a href="#技能目录"><img src="https://img.shields.io/badge/Docs-中文-2f7a65" alt="Chinese documentation"></a>
   <a href="LICENSES.md"><img src="https://img.shields.io/badge/License-per--package-6e7781" alt="per package license"></a>
   <a href="#技能目录"><img src="https://img.shields.io/badge/Packages-12-9f6b13" alt="12 packages"></a>
@@ -64,4 +64,4 @@ cp -R guliai-skills/skills/guliai-daily-signature "${CODEX_HOME:-$HOME/.codex}/s
 
 ## 版本
 
-集合仓库当前版本：[`0.1.1`](VERSION)。
+集合仓库当前版本：[`0.1.2`](VERSION)。

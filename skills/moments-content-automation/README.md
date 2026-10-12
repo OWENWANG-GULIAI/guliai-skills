@@ -8,7 +8,7 @@
 
 **先判断受众，再把真实想法写成自然、有层次、可直接发布的朋友圈文案。**
 
-![Version](https://img.shields.io/badge/Version-0.1.0-9f6b13)
+![Version](https://img.shields.io/badge/Version-0.1.1-9f6b13)
 ![Language](https://img.shields.io/badge/Language-中文-2f7a65)
 ![License](https://img.shields.io/badge/License-UNLICENSED-6e7781)
 
@@ -43,7 +43,7 @@ cp -R skills/moments-content-automation "${CODEX_HOME:-$HOME/.codex}/skills/"
 2. 找出这条内容最重要的表达目的，并区分已知事实、观点、计划和未知信息。
 3. 按素材本身组织内容，不强制字数、段数、开头或结尾模板。
 4. 用自然口语表达，并按语义分段；不同想法之间留空行，便于手机阅读。
-5. 检查受众、事实边界、内容层次和最终复制格式。
+5. 对照硬性要求复核受众、原意、事实依据和复制格式；不通过就修改。再检查内容层次、口语感、分段和结尾，有明显问题时继续打磨。
 
 ## 核心能力与适用场景
 
@@ -88,6 +88,6 @@ cp -R skills/moments-content-automation "${CODEX_HOME:-$HOME/.codex}/skills/"
 
 ## 当前版本与许可证
 
-当前包版本为 `0.1.0`。本包未附带开源许可证，因此目前不授予复制、修改或再分发许可；详见合集的 [许可说明](../../LICENSES.md)。
+当前包版本为 `0.1.1`。本包未附带开源许可证，因此目前不授予复制、修改或再分发许可；详见合集的 [许可说明](../../LICENSES.md)。
 
 <!-- Logo 使用合集内已确认的官方原图，仅用于标识本 Skill 的品牌来源；品牌资产不随 Skill 文本授权。 -->

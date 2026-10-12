@@ -58,16 +58,31 @@ Return one final copy-ready post by default. Put the post alone in a `social_pos
 
 Do not return image concepts, image-generation prompts, or image files.
 
-## Final check
+## Review the draft before delivery
 
-Before returning the post, confirm:
+A first draft is not the deliverable. After drafting, review it against the request, source material, and the requirements above. Keep this review internal; show the user only the final copy.
 
-- The audience matches the request and the source material.
-- The post has one clear purpose and enough substance to develop it.
-- Facts, interpretations, plans, and examples are not presented as the same thing.
-- The wording sounds like a person speaking, not a reusable marketing template.
-- Paragraphs keep related ideas together, with natural line breaks and blank lines between distinct thoughts.
-- The output block contains only copy the user can publish.
+### Hard requirements
+
+All of these must pass:
+
+- **Audience:** The draft follows the user's stated audience or the audience routing above. It does not force enterprise and OPC readers together when their needs differ.
+- **Intent and source fidelity:** It preserves the user's central meaning and has one main communication purpose. It does not turn the source into a different claim.
+- **Evidence:** It contains no invented personal experience, customer dialogue, emotion, result, number, or testimonial. Facts, opinions, plans, and hypothetical examples remain distinguishable. Claims that the material cannot support are removed, qualified, verified when needed, or clarified with the user.
+- **Format:** It preserves semantic paragraphing and phone-friendly line breaks. The final `social_post` block contains only publishable copy, with no title, audience label, analysis, or writing notes. It contains no image or visual deliverable.
+
+If a hard requirement fails, revise before delivery. If the audience choice would materially change the message or the source cannot support a central claim, ask a concise question or narrow the copy to what is known.
+
+### Quality review
+
+Check that the draft:
+
+- develops the main idea with enough substance and progression for this material; each paragraph adds something, and no sentence merely repeats or pads the point;
+- sounds natural when read aloud, using concrete spoken language rather than generic AI phrasing, slogans, unnecessary jargon, forced contrasts, repetitive parallelism, or a stock motivational ending;
+- groups related meaning together, leaves a blank line between distinct thoughts, and avoids both a dense text wall and sentence-by-sentence fragmentation;
+- ends in a way that follows from the thought, without adding a forced lesson or call to action.
+
+If any quality issue is noticeable, revise and review the revised copy again. Do not use a numeric score or fixed structure as a substitute for judgment. Deliver only after the hard requirements pass and no material quality issue remains.
 
 ## Style references
 
