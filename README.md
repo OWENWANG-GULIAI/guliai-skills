@@ -5,19 +5,19 @@
 <h1 align="center">GULIAI Skills</h1>
 
 <p align="center">
-  <a href="VERSION"><img src="https://img.shields.io/badge/Version-0.1.2-9f6b13" alt="version 0.1.2"></a>
+  <a href="VERSION"><img src="https://img.shields.io/badge/Version-0.1.3-9f6b13" alt="version 0.1.3"></a>
   <a href="#技能目录"><img src="https://img.shields.io/badge/Docs-中文-2f7a65" alt="Chinese documentation"></a>
   <a href="LICENSES.md"><img src="https://img.shields.io/badge/License-per--package-6e7781" alt="per package license"></a>
-  <a href="#技能目录"><img src="https://img.shields.io/badge/Packages-12-9f6b13" alt="12 packages"></a>
-  <a href="#技能目录"><img src="https://img.shields.io/badge/Skills-15-2f7a65" alt="15 skills"></a>
+  <a href="#技能目录"><img src="https://img.shields.io/badge/Packages-13-9f6b13" alt="13 packages"></a>
+  <a href="#技能目录"><img src="https://img.shields.io/badge/Skills-16-2f7a65" alt="16 skills"></a>
 </p>
 
-GULIAI Skills 是谷粒 AI（GULIAI）维护的实用型 Codex Skill 合集。它把内容生产、个人品牌、课程设计、社群运营与 Skill 开发等能力放在一个可检索、可安装、可持续维护的目录中，当前包含 12 个独立包和 3 个嵌套 Skill。
+GULIAI Skills 是谷粒 AI（GULIAI）维护的实用型 Codex Skill 合集。它把内容生产、个人品牌、课程设计、社群运营与 Skill 开发等能力放在一个可检索、可安装、可持续维护的目录中，当前包含 13 个独立包，其中 1 个包包含 3 个嵌套 Skill。
 
 > **定位**：面向实际业务与内容生产的独立 Skill 集合与分发入口。<br>
 > **不做什么**：不把多个独立能力伪装成一个根 Skill，也不以总仓库名义重新授权各包内容。
 
-这里的每个目录都是独立 Skill 包：保留自己的 `SKILL.md`、说明、脚本、测试和许可文件；总仓库只负责集中发现与分发。
+这里的每个目录都是独立 Skill 包：按需保留自己的 `SKILL.md`、说明、脚本、测试和许可信息；总仓库只负责集中发现与分发。
 
 ## 快速开始
 
@@ -40,6 +40,7 @@ cp -R guliai-skills/skills/guliai-daily-signature "${CODEX_HOME:-$HOME/.codex}/s
 | `enterprise-training-outline-designer` | 企业培训需求访谈与课程大纲设计 | [source](https://github.com/OWENWANG-GULIAI/enterprise-training-outline-designer) |
 | `guliai-daily-signature` | 谷粒 AI个人品牌日签海报与朋友圈文案 | [source](https://github.com/OWENWANG-GULIAI/guliai-daily-signature) |
 | `guyanyan-wechat-automation` | 谷燕燕 / GULIAI 微信内容生产流水线，并含写作与视觉子 Skill | [source](https://github.com/OWENWANG-GULIAI/guyanyan-wechat-automation) |
+| `knowledge-card-designer` | 将材料整理为知识卡片并调用可用生图工具 | [package](skills/knowledge-card-designer) |
 | `moments-content-automation` | 判断受众并撰写自然、可直接复制的朋友圈文案 | [package](skills/moments-content-automation) |
 | `ppt-page-content-director` | 课程与演示文稿单页内容策划 | [source](https://github.com/OWENWANG-GULIAI/ppt-page-content-director) |
 | `publishing-skills-to-github` | Skill 的公开发布、审计与 GitHub 同步 | [source](https://github.com/OWENWANG-GULIAI/publishing-skills-to-github) |
@@ -56,12 +57,12 @@ cp -R guliai-skills/skills/guliai-daily-signature "${CODEX_HOME:-$HOME/.codex}/s
 - 同步前检查隐私、凭据、本机绝对路径和运行时状态；不把个人素材、私有知识库或本机状态提交到公开仓库。
 - 总仓库不删除、不归档现有独立仓库，避免破坏已有链接。迁移或归档需单独确认。
 - 聚合仓库是统一发现与分发入口；每次更新都需保留来源映射，并完成包级校验。
-- 当前采用“上游仓库更新后同步到合集”的单向维护方式；不会自动双向同步。若未来要把合集改为唯一维护源，需要单独迁移与公告。
+- 有独立上游的包采用“上游更新后同步到合集”的单向维护方式；合集内维护的包以其目录为来源。不会自动双向同步。若未来要把合集改为唯一维护源，需要单独迁移与公告。
 
 ## 许可与使用边界
 
-本仓库**不提供统一的总许可证**。请以各包目录中的 `LICENSE` 为准，并在使用、修改或再发布前阅读 [LICENSES.md](LICENSES.md)。其中 `content-to-flowchart-skill` 的上游目前未提供许可证，合集不会替其授予任何使用许可。
+本仓库**不提供统一的总许可证**。请以各包目录中的 `LICENSE` 为准，并在使用、修改或再发布前阅读 [LICENSES.md](LICENSES.md)。其中 `content-to-flowchart-skill`、`knowledge-card-designer` 和 `moments-content-automation` 未提供许可证，合集不会替其授予额外使用许可。
 
 ## 版本
 
-集合仓库当前版本：[`0.1.2`](VERSION)。
+集合仓库当前版本：[`0.1.3`](VERSION)。
